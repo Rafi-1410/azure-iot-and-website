@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/iot.jpg);
+    background-position:center;
+    background-size:cover;
+    position: relative;
+    color: #ffffff; /* Warna teks */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Bayangan teks */
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li {
+    list-style: none;
+  }
+  
+.nav-links ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.5s;
+  }
+  
+.nav-links ul li a:hover {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 48px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #f44336;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+
+.smart{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+p1{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+
+.smart-col{
+    flex-basis: 31%;
+    text-align: justify;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.smart-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gejala{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gambar-gejala{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.gambar-gejala:hoover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.gambar-gejala img{
+    width: 100%;
+    border-radius: 10px;
+}
+.row1 img{
+    width: 100%;
+    border-radius: 10px;
+    height: 325px;
+}
+
+/*penyebab*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/display.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.informasi{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.informasi-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.informasi-col img{
+    width: 100%;
+}
+
+.informasi2{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+    position: relative;
+}
+
+p2{
+    text-align: center;
+}
+
+/*Penyebab*/
+.background{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.background-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.background-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*Tipe*/
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bla.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/*Mitigasi*/
+.image-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image-cell {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 10px;
+  }
+  .image-cell img {
+    max-width: 100%;
+    max-height: 100%;
+  }

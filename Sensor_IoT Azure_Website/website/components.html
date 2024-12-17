@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART FARMING PEMBERIAN PAKAN AYAM OTOMATIS BERBASIS CLOUD</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index1.html"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="background.html">BACKGROUND OF THE PROBLEM</a></li>
+                    <li><a href="components.html">COMPONENTS</a></li>
+                    <li><a href="benefit.html">BENEFIT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Components of the System</h1>
+</section>
+
+<section class="background">
+    <div class="row">
+        <div class="background-col">
+            <img src="images/esp32.jpg">
+            <h3>ESP-32 S3 </h3>
+            <p1>Penerapan mikrokontroler ESP32-S3 memanfaatkan sepenuhnya modul Wi-Fi internal dan Bluetooth berdaya rendah, 
+                yang memungkinkan sistem untuk langsung mencapai komunikasi jaringan. Integrasi periferal ESP32-S3 menjadikannya 
+                alat yang hebat untuk memproses data. Lebih jauh, dukungannya terhadap operasi jaringan saraf dasar membantu 
+                dalam melakukan pemrosesan data yang dikumpulkan secara lebih rumit dan lebih baik, sehingga menambah tingkat 
+                fungsionalitas dan kinerja lain pada sistem</p1>
+        </div>
+        <div class="background-col">
+            <img src="images/dht22.jpg">
+            <h3>DHT 22</h3>
+            <p1>Sensor DHT22 merupakan sensor yang berfungsi untuk mengatur temperature dan kelembaban yang memiliki keluaran berupa 
+                tegangan analog yang dapat diolah lebih lanjut menggunakan mikrokontroler. Sensor DHT 22 adalah sensor digital 
+                yang dapat mengukur temperature -40oC – 125oC dan kelembaban udara 0% -100% di sekitarnya. Modul ini dapat digunakan 
+                sebagai alat pengindra temperature dan kelembapan dalam aplikasi pengendali temperature dan kelembapan ruangan maupun aplikasi
+                pemantau temperature dan kelembapan relatif ruangan.</p1>
+        </div>
+        <div class="background-col">
+            <img src="images/hcsr.jpg">
+            <h3>HC-SR04</h3>
+            <p1>Sensor ultrasonik adalah sensor yang mengubah besaran fisik (suara) menjadi besaran listrik dan sebaliknya. Sensor 
+                ultrasonik HC-SR04 memancarkan gelombang ultrasonik pada frekuensi 40.000 Hz yang menyebar di udara, dan jika ada 
+                benda atau halangan dalam jangkauannya, gelombang tersebut akan dipantulkan kembali ke modul. Sensor Ultrasonic HC-SR04 
+                dapat melakukan pengukuran jarak tanpa kontak dalam rentang 2 cm hingga 400 cm dengan akurasi hingga 3 mm. 
+                Prinsip kerja dari sensor ini didasarkan pada gelombang suara berfrekuensi tinggi yang jaub diatas kemampuan telinga 
+                manusia.</p1>
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="background-col">
+            <img src="images/buzz.jpg">
+            <h3>Buzzer</h3>
+            <p1>Buzzer adalah sebuah komponen elektronika yang dapat mengubah sinyal listrik menjadi getaran suara. 
+                Buzzer ini biasa dipakai pada sistem alarm.Sederhananya buzzer mempunyai 2 buah kaki yaitu positif dan negatif. 
+                Untuk menggunakannya secara sederhana kita bisa memberi tegangan positif dan negatif 3 - 12V.Cara kerja Buzzer 
+                pada saat aliran listrik atau tegangan listrik yang mengalir ke rangkaian yang menggunakan piezoeletric tersebut. 
+                Piezo buzzer dapat bekerja dengan baik dalam menghasilkan frekuensi di kisaran 1 - 6 kHz hingga 100 kHz. 
+                Buzzer elektronika ini berfungsi sebagai alarm pada saat absensi masuk karyawan dan indikator suara sebagai tanda 
+                bawah suhu pada temperatur tubuh manusia melebih batas normal/upnormal dan buzzer elekronika ini akan berbunyi “beep beep”</p1>
+        </div>
+        <div class="background-col">
+            <img src="images/servo.jpg">
+            <h3>Motor Servo</h3>
+            <p1>Motor servo adalah sebuah motor dengan sistem closed feedback di mana posisi dari motor akan di informasikan kembali 
+                ke rangkaian kontrol yang ada di dalam motor servo. Dengan input ke kontrolnya yang bisa berupa sinyal analog ataupun 
+                sinyal digital, pada dasarnya motor servo banyak digunakan sebagai aktuator yang membutuhkan posisi putaran motor yang 
+                presisi. Motor Servo biasanya hanya bergerak mencapai sudut tertentu saja dan tidak secara kontinyu, Namun untuk 
+                beberapa keperluan Motor Servo dapat dimodifikasi bergerak secara kontinyu. Komponen Potentisiometer pada Motor 
+                Servo SG 90 berfungsi untuk menentukan batas maksimum putara sumbu (axis) moto servo  </p1>
+        </div>
+        <div class="background-col">
+            <img src="images/supply.jpg">
+            <h3>Power Supply 12V</h3>
+            <p1>Power supply 12V pada mikrokontroler adalah sumber daya listrik dengan output tegangan sebesar 12 volt yang 
+                digunakan untuk memberikan energi kepada komponen mikrokontroler atau perangkat pendukungnya. Meskipun kebanyakan 
+                mikrokontroler bekerja pada tegangan yang lebih rendah, seperti 3.3V atau 5V, power supply 12V sering digunakan 
+                sebagai input utama yang kemudian diatur atau diubah menggunakan komponen seperti voltage regulator 
+                (misalnya 7805 atau modul buck converter) untuk memenuhi kebutuhan tegangan kerja mikrokontroler. Penggunaan power 
+                supply 12V ini juga dapat mendukung perangkat tambahan, seperti sensor, relay, atau aktuator, yang memerlukan 
+                tegangan lebih tinggi untuk beroperasi.</p1>
+        </div>
+    </div>
+    </div>
+</section>
+</body>
+</html>

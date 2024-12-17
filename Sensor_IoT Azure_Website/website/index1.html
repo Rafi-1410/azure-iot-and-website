@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART FARMING PEMBERIAN PAKAN AYAM OTOMATIS BERBASIS CLOUD</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index1.html"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="background.html">BACKGROUND OF THE PROBLEM</a></li>
+                    <li><a href="components.html">COMPONENTS</a></li>
+                    <li><a href="benefit.html">BENEFIT</a></li>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box my-element">
+            <h1>Smart Farming Pemberian Pakan Ayam Otomatis Berbasis Cloud</h1>
+            <p>If you want to view the sensor data in real-time, please click on the report section below
+            </p>
+            <a href="index.html" class="hero-btn">Report</a>
+        </div>
+    </section>
+
+
+
+<!--------JavaScript for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+
+
+<!------------Pengertian-->
+
+<section class="smart">
+    <h1>What is Smart Farming?</h1>
+    
+    <div class="row">
+        <div class="smart-col">
+            <img src="images/smart.jpg">
+            <p1>Smart farming adalah konsep pertanian yang menggunakan teknologi modern, termasuk Internet of Things (IoT), 
+                kecerdasan buatan (AI), dan analitik data, untuk meningkatkan efisiensi, kualitas, dan 
+                kuantitas produksi pertanian. Teknologi ini memungkinkan pemantauan real-time atas kondisi seperti kelembaban tanah, 
+                cuaca, dan kesehatan tanaman, serta memberikan data untuk pengambilan keputusan yang lebih tepat
+            </p1>
+        </div>
+        <div class="smart-col">
+            <img src="images/iott.jpg">
+            <p1>Dalam praktiknya, perangkat IoT mengumpulkan data dari sensor yang ditempatkan di ladang. Data ini diproses 
+                menggunakan algoritma AI untuk mengoptimalkan irigasi, penggunaan pupuk, dan pengendalian hama, sehingga 
+                sumber daya digunakan secara efisien. Selain itu, sistem cerdas ini dapat mengurangi biaya operasional dan 
+                dampak lingkungan dengan cara yang berkelanjutan.         
+            </p1>
+        </div>
+        <div class="smart-col">
+            <img src="images/farm.jpg">
+            <p1>Menurut penelitian, adopsi smart farming dapat membantu menghadapi tantangan global seperti perubahan iklim, 
+                kelangkaan sumber daya, dan kebutuhan pangan yang meningkat seiring dengan pertumbuhan populasi dunia. 
+                Teknologi ini menciptakan solusi berbasis data untuk meningkatkan produktivitas sekaligus menjaga keberlanjutan 
+                ekosistem pertanian.
+            </p1>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="informasi">
+    <h2>How the System Work?</h2>
+    <div class="row">
+        <div class="informasi-col">
+            <h1>ESP32, DHT22, HCSR04</h1>
+            <p1>Sistem IoT yang dibuat terdiri dari sensor DHT22, sensor Ultrasonic HCSR-04, ESP32, buzzer, motor servo, MQTT sebagai 
+                protokol komunikasi dan Microsoft Azure sebagai cloud.  Mikrokontroler (ESP32) menginisialisasi sistem dan memastikan 
+                koneksi internet tersedia untuk memulai proses. Data dari sensor DHT22 serta sensor ultrasonik HC-SR04 dibaca setelah mikrokontroler 
+                diinisialisasi pasca koneksi berhasil. Sensor DHT22 membaca kelembaban udara; sensor ultrasonik HC-SR04 mengukur ketinggian dari 
+                tempat pakan ternak. Secara terpisah, logika kontrol diterapkan pada masing-masing sensor ini. Buzzer akan diaktifkan 
+                jika kelembaban yang terdeteksi oleh sensor DHT22 melebihi 50 persen. Motor servo akan menyala atau bergerak jika sensor
+                ultrasonik mendeteksi ketinggian dari pakan ternak sejauh 68 cm dari sensor. Sistem segera memeriksa pengiriman data ke cloud 
+                setelah kontrol selesai. Mikrokontroler  kemudian mengirimkan data ke MQTT Broker melalui protokol komunikasi MQTT. 
+                Microsoft Azure's cloud platform berkomunikasi dengan mikrokontroler melalui MQTT sebagai protokol komunikasi. 
+                Setelah data diterima oleh broker, data akan dikirimkan ke Microsoft Azure untuk disimpan serta diproses. 
+                Di dalam platform Azure, data kelembaban dari DHT22 serta mengukur ketinggian pakan ternak dari sensor ultrasonik, 
+                divisualisasikan dala bentuk grafik yang dapat digunakan untuk memantau kondisi secara real-time serta mengakses 
+                informasi secara remote (jarak jauh).
+             </p1>
+        </div>
+        <div class="informasi-col">
+            <img src="images/PPP.jpg" alt="">
+        </div>  
+</section>     
+</body>
+</html>
