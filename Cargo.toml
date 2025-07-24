@@ -10,7 +10,8 @@ repository = "https://github.com/yourusername/electronic-nose-rust"
 [dependencies]
 # Hardware & GPIO
 rppal = "0.14"
-spidev = "0.6"
+ads1x1x = "0.2"
+linux-embedded-hal = "0.4"
 
 # Machine Learning
 candle-core = "0.4"
